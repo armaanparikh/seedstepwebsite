@@ -1,7 +1,7 @@
 const config = {
-    domain: "theproduct.com",
-    title: "Waitlist Page | The Product",
-    description: "Elevate your texts with the perfect emojis. Usemoji.app is coming soon! Join the waiting list for updates and exclusive access.",
+    domain: "seedsteptalent.com",
+    title: "SeedStep Talent Search",
+    description: "Join the waiting list for updates and exclusive access.",
     subscribeForm: "https://dashboard.mailerlite.com/forms/631411/101265918935434456/share",
 
     socials: {
@@ -9,30 +9,28 @@ const config = {
     },
 
     contents: {
-        title: "Discover Your Ideal Experience with The Product",
+        title: "simplifying your talent search",
         markOfTitle: "The Product", // its for marking the title. The text must contain on title. If not, it will be ignored.
-        description: `Step into a realm of possibilities with The Product. Immerse yourself
-        in a shopping journey where intuitive features and cutting-edge design
-        come together to enhance your every selection.`,
+        description: `need an internship? join our waitlist.`,
 
         about: [
             {
                 id: 1,
-                emoji: "💡",
-                title: "Innovative Design",
-                description: "The Product is designed to be a seamless experience for all users. Our team has worked tirelessly to create a platform that is both intuitive and visually stunning."
+                emoji: "🔌",
+                title: "Disconnect",
+                description: "There is a disconnect between students looking for internships and startups looking to hire."
             },
             {
                 id: 2,
-                emoji: "🚀",
-                title: "Fast and Efficient",
-                description: "We understand that your time is valuable. That's why we've optimized The Product to be as fast and efficient as possible. Spend less time shopping and more time enjoying your purchases."
+                emoji: "📖",
+                title: "Inadequate Career Resources",
+                description: "The majority of Vanderbilt students are dissatisfied with the career resources available to them."
             },
             {
                 id: 3,
-                emoji: "🌎",
-                title: "Global Reach",
-                description: "The Product is available to users all around the world. No matter where you are, you can access our platform and discover the perfect product for you."
+                emoji: "🕒",
+                title: "Startups Have No Time",
+                description: "Startups are too busy running the day-to-day operations of their business to search for college interns."
             }
         ],
 

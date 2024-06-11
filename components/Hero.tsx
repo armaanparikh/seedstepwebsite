@@ -1,10 +1,7 @@
 "use client";
 
 import { useMemo } from "react";
-import Image from "next/image";
-// config
 import config from "@/config/general";
-// components
 import Form from "./Form";
 
 const Hero = () => {
@@ -21,32 +18,25 @@ const Hero = () => {
       };
     }
     return { text: config.contents.title, mark: null };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [config.contents]);
 
   return (
-    <section className="xl:flex-row flex-col flex items-center justify-center gap-7 sm:gap-14">
-      <div className="xl:w-5/12 w-11/12 xl:my-40 mt-40 flex flex-col gap-6">
-        <h1 className="min-w-[73%] sm:min-w-[300px] xl:min-w-[490px] xl:w-10/12 w-8/12 font-normal text-2xl sm:text-4xl text-black relative z-40">
+    <section className="mt-15 mb-20 flex flex-col items-center">
+      {/* Reduced the top margin and gap */}
+      <div className="mt-20 mb-15 flex flex-col items-center gap-2 sm:gap-6">
+        <h1 className="font-normal text-2xl sm:text-4xl text-black text-center mb-2">
           {title.text}
           {title.mark && (
-            <span className="bg-primary whitespace-nowrap inline-block ml-1 absolute px-2 w-[fit-content] bottom-[12px] sm:bottom-[12px] leading-[8px] text-black rounded h-2 sm:h-3">
+            <span className="bg-primary whitespace-nowrap inline-block ml-1 px-2 text-black rounded">
               {title.mark}
             </span>
           )}
         </h1>
-        <span className="font-light text-lg sm:text-2xl text-black">
+        <p className="font-light text-lg sm:text-2xl text-black text-center mb-4">
           {config.contents.description}
-        </span>
+        </p>
         <Form />
       </div>
-      <Image
-        src="/hero.jpg"
-        alt="hero"
-        width={648}
-        height={500}
-        className="rounded-sm xl:w-6/12 xl:max-w-[648px] w-11/12 h-max"
-      />
     </section>
   );
 };

@@ -1,14 +1,15 @@
-import { About, Hero, Header, Price, Faq, HowWorks, Footer } from "@/components";
+import { About, Hero, Header, Footer } from "@/components";
 
 export default function Home() {
   return (
-    <main className="lg:mt-20 lg:mx-20 lg:p-12 bg-white mt-4 mx-4 p-8 mb-4 lg:mb-24 rounded">
-      <Header />
+    <main className="flex flex-col items-center bg-white text-black">
+      {/* Assuming Header is your navigation bar */}
+      <Header /> 
+      {/* Hero section likely has a large, prominent display or introduction */}
       <Hero />
+      {/* About section as per your design */}
       <About />
-      <HowWorks />
-      <Price />
-      <Faq />
+      {/* Footer with additional links or contact information */}
       <Footer />
     </main>
   );

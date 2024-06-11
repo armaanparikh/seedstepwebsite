@@ -6,11 +6,11 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div className="mb-15">
-      <div className="bg-grayBackground rounded-md">
+      <div className="bg-whiteBackground rounded-md">
         <div className="w-11/12 xl:w-[1050px] mx-auto flex md:flex-row flex-col justify-between md:gap-0 gap-12 items-start py-16">
           <div className="flex flex-col gap-2">
             <Image
-              src={"/logo.svg"}
+              src={"/logo2.png"}
               width={180}
               height={60}
               alt={config.title}
@@ -19,41 +19,27 @@ const Footer = () => {
           </div>
           <div>
             <span className="uppercase text-[#8d8d8d] font-semibold">
-              Links
+              {/* Can write in stuff for links and legal belowand add to the list*/}
+              
             </span>
             <ul className="font-medium flex flex-col gap-2 mt-4 text-activeButton">
-              <li>How it works</li>
-              <li>Price</li>
-              <li>FAQ</li>
-              <li>Support</li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
             </ul>
           </div>
           <div>
             <span className="uppercase text-[#8d8d8d] font-semibold">
-              Legal
+              
             </span>
             <ul className="font-medium flex flex-col gap-2 mt-4 text-activeButton">
-              <li>Terms of services</li>
-              <li>Privact policy</li>
+              <li></li>
+              <li></li>
             </ul>
           </div>
         </div>
-        <div className="w-11/12 xl:w-[1050px] mx-auto pb-16">
-          © 2023 -
-          <Link
-            href="https://twitter.com/beratbozkurt0/status/1699164095994372577"
-            passHref
-            legacyBehavior
-          >
-            <a
-              target="_blank"
-              className="underline underline-offset-2"
-              rel="noopener noreferrer"
-            >
-              #buildinpublic
-            </a>
-          </Link>
-        </div>
+        
       </div>
     </div>
   );
